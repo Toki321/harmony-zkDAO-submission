@@ -161,6 +161,7 @@ contract Ballot {
         winnerName_ = proposals[winningProposal()].name;
     }
 
+    // Returns how much time has passed since start of voting
     function timePassed() public view returns(uint) {
         return block.timestamp - startTime;
     }
