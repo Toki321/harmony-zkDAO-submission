@@ -23,7 +23,7 @@ contract Ballot {
 
     address public chairperson;
 
-    uint startTime;
+    uint public startTime;
 
     uint votingPeriod = 5 minutes;
 
@@ -159,5 +159,9 @@ contract Ballot {
             returns (bytes32 winnerName_)
     {
         winnerName_ = proposals[winningProposal()].name;
+    }
+
+    function timePassed() public view returns(uint) {
+        return block.timestamp - startTime;
     }
 }
