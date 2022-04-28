@@ -1,23 +1,20 @@
 // SPDX-License-Identifier: GPL-3.0
-pragma solidity 0.8.13;
+
+pragma solidity >=0.7.0 <0.9.0;
 
 contract HelloWorld {
 
-    uint256 _number;
+    uint number;
 
     constructor () {}
 
-    // function to store the number
-    function storeNumber(uint256 number) public {
-        _updateNumber(number);
+    // function to store number
+    function storeNumber(uint _number) external {
+        number = _number;
     }
 
-    function _updateNumber(uint256 _newNumber) internal {
-        _number = _newNumber;
-    }
-
-    // function to retrieve the number
-    function retrieveNumber() public view returns(uint256) {
-        return _number;
+    // function to retrieve stored number
+    function retrieveNumber() external view returns(uint){
+        return number;
     }
 }
