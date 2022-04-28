@@ -26,4 +26,5 @@ Answers to the pre-requisite tasks for entering the summer 2022 Harmony zkDAO su
 
 ### Program a super simple “Hello World” smart contract: write a storeNumber function to store an unsigned integer and then a retrieveNumber function to retrieve it. Clearly comment your code. Once completed, deploy the smart contract on remix. Push the .sol file to Github or Gist and include a screenshot of the Remix UI once deployed in your final submission pdf. 
 - [Store/Retrieve contract](https://github.com/Toki321/harmony-zkDAO-submission/blob/main/HelloWorld.sol)
+![HelloWorld contract deployed - Remix IDE](1.png)
 
