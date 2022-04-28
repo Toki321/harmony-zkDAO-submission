@@ -25,6 +25,23 @@ Answers to the pre-requisite tasks for entering the summer 2022 Harmony zkDAO su
 - Show him the object as the one you have to find and ask him to rearrange them while you don’t look. Then show him the same ball that you’re supposed to find. Repeat until the colorblind person is convinced.
 
 ### Program a super simple “Hello World” smart contract: write a storeNumber function to store an unsigned integer and then a retrieveNumber function to retrieve it. Clearly comment your code. Once completed, deploy the smart contract on remix. Push the .sol file to Github or Gist and include a screenshot of the Remix UI once deployed in your final submission pdf. 
-- [Store/Retrieve contract](https://github.com/Toki321/harmony-zkDAO-submission/blob/main/HelloWorld.sol)
-![HelloWorld contract deployed - Remix IDE](1.png)
+- [Store/Retrieve contract](https://github.com/Toki321/harmony-zkDAO-submission/blob/main/HelloWorld.sol) 
+
+![Hello World contract deployed](zkImages/HelloWorld.png)
+
+### Suppose we want to limit the voting period of each Ballot contract to 5 minutes. To do so, implement the following: Add a state variable startTime to record the voting start time. Create a modifier voteEnded that will check if the voting period is over. Use that modifier in the **vote** function to forbid voting and revert the transaction after the deadline. 
+- [Time Ballot contract with limited time for voting](https://github.com/Toki321/harmony-zkDAO-submission/blob/main/LimitedTimeBallot.sol)
+
+
+Deployed the contract and gave a right to vote to an address
+![Time Ballot contract deployed](zkImages/1.png)
+
+
+Voting after 5 minutes has passed
+![Time Ballot contract deployed](zkImages/af.png)
+
+
+Showing startTime and timePassed(A function I made to return the time passed since start of voting in seconds)
+![Time Ballot contract deployed](zkImages/call.png)
+
 
