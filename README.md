@@ -28,17 +28,27 @@ Answers to the pre-requisite tasks for entering the summer 2022 Harmony zkDAO su
 - [Store/Retrieve contract](https://github.com/Toki321/harmony-zkDAO-submission/blob/main/HelloWorld.sol) 
 
 ![Hello World contract deployed](zkImages/HelloWorld.png)
+<br />
 
 ### Suppose we want to limit the voting period of each Ballot contract to 5 minutes. To do so, implement the following: Add a state variable startTime to record the voting start time. Create a modifier voteEnded that will check if the voting period is over. Use that modifier in the **vote** function to forbid voting and revert the transaction after the deadline. 
+### Deploy your amended script and test the newly implemented functionality in part 3. Submit (1) your amended version of the contract on Github or Gist and (2) screenshots showing the time of contract deployment as well as the transaction being reverted once past the voting period.
 - [Time Ballot contract with limited time for voting](https://github.com/Toki321/harmony-zkDAO-submission/blob/main/LimitedTimeBallot.sol)
+
 
 
 Deployed the contract and gave a right to vote to an address
 ![Time Ballot contract deployed](zkImages/1.png)
+<br />
+<br />
 
 
 Voting after 5 minutes has passed
 ![Time Ballot contract deployed](zkImages/af.png)
+<br />
+<br />
+
+
+
 
 
 Showing startTime and timePassed(A function I made to return the time passed since start of voting in seconds)
